@@ -4,7 +4,6 @@ It is simple example of viewcontroller with one tableView, which is initialized 
 
 
 Example of model, which is populating tableview
-
 ```
 struct CategoryForm: Codable {
 	var name: String
