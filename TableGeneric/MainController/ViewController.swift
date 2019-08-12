@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     }
     
     func openTableView(tableGeneric: TableGenericPicker<ExempleModel>, didSelect: @escaping (ExempleModel) -> Void) {
-        tableGeneric.title = "Notice of Appeal"
+        tableGeneric.title = "Exemple Picker"
         tableGeneric.didSelect = didSelect
         self.navigationController?.pushViewController(tableGeneric, animated: true)
     }
