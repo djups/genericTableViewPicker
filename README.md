@@ -3,7 +3,7 @@
 It is simple example of viewcontroller with one tableView, which is initialized by generic type of model. Inside generic model is encapsulated all information about data and cell description (reusable identifier as well).
 
 
-Example of model, which is populating tableview
+Example of model, which is populating tableview. In our case, it is Codable, because it is mapping json response from backend.
 ```
 struct CategoryForm: Codable {
 	var name: String
