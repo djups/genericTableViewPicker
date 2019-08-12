@@ -34,12 +34,17 @@ extension ExempleTableViewCellModel: CellViewModel {
 }
    ```
 
-Now, after your model is ready and implemented GenericCellModel protocol, you can initialize and push generic picker controller somewhere from you router/wireframe class.
+Now, after your model is ready and implemented GenericCellModel protocol, you can initialize and push generic picker controller somewhere from your router/wireframe class.
 ```
    
-     func openTableView(tableGeneric: TableGenericPicker<ExempleModel>, didSelect: @escaping (ExempleModel) -> Void) {
-        let tableGeneric = TableGenericPicker<ExempleModel>(nibName:"TableGenericPicker", source: exempleModels, selectedSource: selectedModel)
-        tableGeneric.didSelect = didSelect
-        self.navigationController?.pushViewController(tableGeneric, animated: true)
-    }
+ func openTableView(tableGeneric: TableGenericPicker<ExempleModel>, didSelect: @escaping (ExempleModel) -> Void) {
+	let tableGeneric = TableGenericPicker<ExempleModel>(nibName:"TableGenericPicker", source: exempleModels, selectedSource: selectedModel)
+	tableGeneric.didSelect = didSelect
+	self.navigationController?.pushViewController(tableGeneric, animated: true)
+}
    ```
+   
+   
+Thanks for ideas: 
+Anderson Santos Gusmão: https://medium.com/@andersongusmao
+Alexander Zimin: https://www.instagram.com/alzimin/
