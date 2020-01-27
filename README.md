@@ -43,6 +43,12 @@ Now, after your model is ready and implemented GenericCellModel protocol, you ca
 	self.navigationController?.pushViewController(tableGeneric, animated: true)
 }
    ```
+  
+Example of usage: project with 2 or more screens, for selection different models:
+```
+ extension UserModel: GenericCellModel {....}
+ extension TypeModel: GenericCellModel {....}
+   ```
    
    
 Thanks for ideas: 
